@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Ability, Pokemon, Type } from "../../types";
+import { Ability, Pokemon } from "../../types";
 import { PokemonCard } from "../Common/PokemonCard";
 import { AttacksCard } from "./AttacksCard";
 import { BattleReviewCard } from "./BattleReviewCard";
@@ -10,12 +10,6 @@ export interface AttackInfo {
     damage: number;
 }
 
-export interface PokemonBattleStats {
-    id: number;
-    attack: number;
-    defense: number;
-    typeFactor: number;
-}
 
 export interface BattleStats {
     winner: boolean;
@@ -25,11 +19,6 @@ export interface BattleStats {
 export interface BattleReview {
     pokemonAttack: Ability;
     opponentAttack: Ability;
-}
-
-interface BattleInfo {
-    pokemon: PokemonBattleStats;
-    opponent: PokemonBattleStats;
 }
 export interface BattleProps {
     pokemon?: Pokemon;

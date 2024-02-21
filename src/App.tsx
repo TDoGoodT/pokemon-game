@@ -1,10 +1,9 @@
 import './App.css'
 import React from 'react'
-import { Ability, Pokemon, PokemonGameStats, Type } from './types';
+import { Ability, BattleInfo, Pokemon, PokemonBattleStats, PokemonGameStats, Type } from './types';
 import { PokemonGame } from './components/PokemonGame';
 import { POKEMON_API, NUM_OF_POKEMON, POKEMON_LIMIT } from './app-constants';
 import { Loading } from './components/Common/Loading';
-import { PokemonBattleStats } from './components/BattlePage/Battle';
 
 
 function getEffectivePower(power: number, pokemonStats: PokemonBattleStats, opponentStats: PokemonBattleStats): number {

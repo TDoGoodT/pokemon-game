@@ -22,10 +22,10 @@ export const PokemonReviewCard: React.FC<PokemonReviewCardProps> = ({
     const weight = pokemon.weight;
     const height = pokemon.height;
 
-    const majorInfo = {
-        'Type': type,
-        'Weight': weight,
-        'Height': height
+    const majorInfo: { [key: string]: string } = {
+        'Type': type!,
+        'Weight': weight!.toString(),
+        'Height': height!.toString()
     }
 
     const hp = pokemon.stats && pokemon.stats[0].base_stat;
@@ -35,13 +35,13 @@ export const PokemonReviewCard: React.FC<PokemonReviewCardProps> = ({
     const specialDefense = pokemon.stats && pokemon.stats[4].base_stat;
     const speed = pokemon.stats && pokemon.stats[5].base_stat;
 
-    const minorInfo = {
-        'HP': hp,
-        'Attack': attack,
-        'Defense': defense,
-        'Special Attack': specialAttack,
-        'Special Defense': specialDefense,
-        'Speed': speed
+    const minorInfo: { [key: string]: number } = {
+        'HP': hp!,
+        'Attack': attack ? attack : 0,
+        'Defense': defense!,
+        'Special Attack': specialAttack!,
+        'Special Defense': specialDefense!,
+        'Speed': speed!
     }
 
 

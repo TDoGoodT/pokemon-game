@@ -1,7 +1,6 @@
 import React from "react";
 import { Pokemon } from "../../types";
 import { PokemonCard } from "./PokemonCard";
-import { NUM_OF_POKEMON } from "../../app-constants";
 
 export interface PokemonCardListProps {
     pokemons: Pokemon[];

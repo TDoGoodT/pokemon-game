@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Ability, Pokemon, PokemonGameStats } from "../types";
 import { BattleMainPage } from "./BattlePage/BattleMainPage";
 import { ReviewPage } from "./ReviewPage/ReviewPage";

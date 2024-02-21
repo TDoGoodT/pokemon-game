@@ -1,6 +1,18 @@
+
 export interface PokemonStats {
   wins: number;
   losses: number;
+}
+export interface PokemonBattleStats {
+  id: number;
+  attack: number;
+  defense: number;
+  typeFactor: number;
+}
+
+export interface BattleInfo {
+  pokemon: PokemonBattleStats;
+  opponent: PokemonBattleStats;
 }
 
 export interface PokemonGameStats {

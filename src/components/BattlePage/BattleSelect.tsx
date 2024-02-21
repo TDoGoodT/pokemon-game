@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Pokemon, PokemonBattleResults } from "../../types";
+import { Pokemon } from "../../types";
 import { PokemonCardList } from "../Common/PokemonCardList";
 import { Done } from "./Done";
 
