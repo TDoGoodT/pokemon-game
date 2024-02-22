@@ -49,6 +49,9 @@ export const Battle: React.FC<BattleProps> = ({
     }, []);
 
     const stepBattle = (attack: Ability) => {
+        if (battleStats) {
+            return
+        }
         const randomIndex = Math.floor(Math.random() * opponentAttacks.length);
         const opponentAttack = opponentAttacks[randomIndex];
         setBattleReview({ pokemonAttack: attack, opponentAttack: opponentAttack });
